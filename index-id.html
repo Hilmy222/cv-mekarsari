@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEKARSARI</title>
+  <link rel="icon" type="image/png" href="dist/img/Logo-Mekar-Sari 3.png">
+  <link href="src/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .answer {
+      transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+      max-height: 0;
+      /* Mulai dengan max-height 0 */
+      opacity: 0;
+      /* Mulai dengan opacity 0 */
+      overflow: hidden;
+      /* Sembunyikan konten */
+    }
+
+    .answer.show {
+      max-height: 100px;
+      /* Atur max-height untuk menampilkan jawaban */
+      opacity: 1;
+      /* Atur opacity menjadi 1 */
+    }
+  </style>
+</head>
+
+<body class="font-sans mx-auto max-w-[1920px] scroll-smooth">
+
+
+ <!--Navbar-->
+<div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
+  <div class="container mx-auto flex items-center h-24">
+    <a href="index-id.html" class="flex items-center justify-center">
+      <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
+      <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+    </a>
+    <nav class="contents font-semibold text-base lg:text-lg">
+      <ul class="mx-auto flex items-center">
+        <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="index-id.html">Beranda</a>
+        </li>
+        <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="#about-us">Tentang Kami</a>
+        </li>
+        <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="#Service&Product">Layanan & Produk</a>
+        </li>
+        <li class="p-5 xl:p-8 text-sm">
+          <a href="index-en.html">
+            <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-8 h-8 inline-block mx-2" />
+            <span>Indonesia</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#ContactUs">
+    <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white transition-all duration-300">Hubungi Kami</button>
+  </a>
+</div>
+</div>
+<!-- Responsive Navbar for smaller screens -->
+<div class="block md:hidden bg-white shadow-lg p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="index-id.html" class="flex items-center">
+      <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
+      <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
+    </a>
+    <button id="mobile-menu-toggle" class="focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
+    <a href="index-id.html" class="block text-base font-medium">Beranda</a>
+    <a href="#about-us" class="block text-base font-medium">Tentang Kami</a>
+    <a href="#Service&Product" class="block text-base font-medium">Layanan & Produk</a>
+    <a href="index-en.html" class="flex items-center">
+      <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-6 h-6 inline-block mr-2" />
+      <span>Indonesia</span>
+    </a>
+  </div>
+</div>
+
+
+  <script>
+    let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+// Set navbar to visible when the page loads
+navbar.classList.remove('-translate-y-full');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    navbar.classList.add('-translate-y-full');
+  } else {
+    // Scrolling up
+    navbar.classList.remove('-translate-y-full');
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure we don't get negative scroll values
+});
+
+  </script>
+
+
+  <!--Hero Section-->
+  <div class="relative font-sans container pl-4 md:pl-16 mt-10 pt-24">
+    <div class="absolute inset-0">
+      <img src="dist/img/background-kiri.png" alt="Gambar Latar Belakang" class="w-full h-full object-cover md:w-1/2 md:pt-14">
+    </div>
+    <div class="relative z-10 text-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
+        <div class="mt-10 md:mt-36">
+          <h1 class="font-semibold text-[36px] md:text-[55px] leading-tight">
+            <span class="text-mekarsari">CV Mekar Sari</span>
+          </h1>
+          <p class="py-1 text-black">
+            <span class="font-semibold">"Sejak 1986: Mitra Terpercaya Anda dalam Industri Lepas Pantai dan
+              Kelautan"</span>
+            <span class="text-secondGray">Dengan pengalaman puluhan tahun, CV Mekar Sari telah membangun reputasi yang
+              solid sebagai kontraktor dan pemasok yang dapat diandalkan, menyediakan solusi berkualitas tinggi untuk
+              industri Lepas Pantai dan Kelautan.</span>
+          </p>
+          
+        </div>
+        <div class="flex justify-center md:justify-end items-center">
+          <img src="dist/img/file.png" alt=""
+            class="w-full max-w-[300px] md:max-w-[600px] h-auto object-cover rounded-xl">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Tentang Kami -->
+  <div id="about-us" class="py-16">
+    <div class="container mx-auto px-4 md:px-8">
+      <!-- Header Tentang Kami -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-mekarsari mb-4">Tentang Kami</h2>
+        <p class="text-base md:text-lg text-secondGray max-w-xl md:max-w-3xl mx-auto">
+          Didirikan sejak tahun 1986, CV. MEKAR SARI adalah badan usaha yang mengkhususkan diri dalam memberikan layanan
+          dan beroperasi sebagai kontraktor di sektor Kontraktor dan Pemasok. Sejak berdirinya, perusahaan ini telah
+          membangun reputasi yang kuat dan kredibel dalam menyediakan solusi yang andal dan terkini untuk kebutuhan
+          pasokan dan kontrak di konteks layanan Lepas Pantai dan Kelautan. Melalui dedikasi dan pengalaman yang terus
+          berkembang, CV. MEKAR SARI tetap berkomitmen untuk memberikan layanan berkualitas tinggi dan berkontribusi
+          positif terhadap kemajuan industri ini.
+        </p>
+      </div>
+
+      <!-- Konten Tentang Kami -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Kolom Kiri: Gambar -->
+        <div class="flex justify-center">
+          <img src="dist/img/image 6.png" alt="Gambar Tentang Kami" class="w-full h-auto max-w-md rounded-lg shadow-lg">
+        </div>
+
+        <!-- Kolom Kanan: Teks Tentang Kami -->
+        <div class="flex flex-col text-justify">
+          <p class="text-lg text-secondGray mb-4">
+            Pertumbuhan perusahaan kami didorong oleh semangat dan profesionalisme tim kami, memastikan bahwa setiap
+            proyek yang kami tangani memenuhi standar kualitas dan keandalan tertinggi. Baik itu dalam kontrak maupun
+            pasokan, kami memastikan pengalaman layanan yang lancar dan efektif.
+          </p>
+          <p class="text-lg text-secondGray">
+            Seiring dengan berkembangnya industri layanan lepas pantai dan kelautan, CV. MEKAR SARI tetap berkomitmen
+            untuk terus berada di garis depan kemajuan ini, terus meningkatkan dan memperluas kemampuan kami.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Bagian Visi & Misi -->
+    <!-- <div class="container md:px-20">
+      <div class="mt-16 text-center">
+        <h3 class="text-3xl font-bold text-mekarsari mb-6">Visi & Misi</h3>
+        <div class="mb-12 relative">
+          <h4 class="text-2xl font-semibold text-mekarsari bg-white shadow-lg w-32 text-center mx-auto md:mb-[-16px] relative z-10">Visi</h4>
+          <p class="p-6 text-lg max-w-3xl mx-auto bg-mekarsari text-white rounded-lg relative z-0">
+            Menjadi perusahaan dalam industri jasa dan penyedia layanan kontraktor di sektor Kontraktor dan Pemasok
+            dengan standar internasional pertama yang memiliki keunggulan kompetitif di pasar global.
+          </p>
+        </div>      
+          <div>
+          <h4 class="text-2xl font-semibold text-secondBlack mb-3">Misi</h4>
+          <ul class="text-lg text-secondGray max-w-3xl mx-auto list-disc list-inside">
+            <li class="mb-2">Kami menawarkan solusi berkualitas tinggi untuk masalah konsumen dalam Konsultasi,
+              Konstruksi, dan Perdagangan & Pengadaan untuk Layanan Lepas Pantai dan Kelautan.</li>
+            <li class="mb-2">Didorong oleh kemampuan dan komitmen Sumber Daya Manusia kami, kami bertujuan untuk
+              memberikan hasil yang efektif dan berkelanjutan.</li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    
+    <div class="px-3 md:px-20 flex sm:flex-col-reverse md:flex">
+      <div class="md:w-1/2">
+        <h1 class="text-3xl font-semibold text-mekarsari">Visi & Misi</h1>
+        <p class="py-6">Menjadi pemimpin dalam industri jasa, menyediakan solusi berkualitas tinggi untuk kebutuhan kelautan dan lepas pantai.</p>
+        
+        <div class="px-3">
+        <h1 class="text-xl text-mekarsari font-medium py-3">Visi</h1>
+        <div class="flex flex-col gap-3 mb-3 text-sm">
+          <div class="flex gap-3 items-start">
+            <img src="dist/icon/visi1.svg" alt="" class="w-7 h-7">
+            <h1>Menjadi perusahaan dalam industri jasa dan penyedia layanan kontraktor di sektor Kontraktor.</h1>            
+          </div>
+          <div class="flex gap-3 items-start">
+            <img src="dist/icon/visi2.svg" alt="" class="w-7 h-7">
+            <h1>Pemasok dengan standar internasional pertama yang memiliki keunggulan kompetitif di pasar global.</h1>            
+          </div>
+        </div>
+
+        <h1 class="text-xl text-mekarsari font-medium py-3">Misi</h1>
+        <div class="flex flex-col gap-3 text-sm">
+          <div class="flex gap-3 items-start">
+            <img src="dist/icon/misi1.svg" alt="" class="w-7 h-7">
+            <h1>Menawarkan solusi berkualitas tinggi untuk masalah konsumen dalam Konsultasi,
+              Konstruksi, dan Perdagangan & Pengadaan untuk Layanan Lepas Pantai dan Kelautan.</h1>            
+          </div>
+          <div class="flex gap-3 items-start">
+            <img src="dist/icon/misi2.svg" alt="" class="w-7 h-7">
+            <h1>Didorong oleh kemampuan dan komitmen Sumber Daya Manusia kami, kami bertujuan untuk
+              memberikan hasil yang efektif dan berkelanjutan.</h1>            
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-end">
+        <img src="dist/img/image 6.png" alt="" class="h-[200px] w-full hidden md:block md:h-[478px] object-cover rounded-xl md:w-3/4">
+      </div>
+    </div>
+
+
+
+
+
+
+
+  <!-- Produk & Layanan -->
+  <div id="Service&Product" class="py-14">
+    <div class="container mx-auto px-20">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-mekarsari mb-4">Produk & Layanan</h2>
+        <p class="text-lg text-secondGray max-w-xl mx-auto">Kami menawarkan berbagai layanan dan produk berkualitas
+          tinggi untuk memenuhi kebutuhan Anda di sektor Lepas Pantai dan Kelautan.</p>
+      </div>
+      <div class="text-center mb-4 py-4">
+        <h2 class="text-2xl font-semibold">Layanan</h2>
+      </div>
+
+      <!-- Grid untuk Kartu Layanan & Produk -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 z-0">
+
+        <!-- Layanan 1 -->
+        <a href="detail.html#perencanaan">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group z-0">
+          <div
+            class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full">
+          </div>
+          <div class="relative z-10">
+            <img src="dist/img/plan-list-svgrepo-com 1.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Perencanaan</h3>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Studi kelayakan mencakup
+              survei, konsultasi, dan pembuatan gambar serta spesifikasi.</p>
+          </div>
+        </div>
+        </a>
+
+        <!-- Layanan 2 -->
+        <a href="detail.html#konstruksi">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group">
+          <div
+            class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full">
+          </div>
+          <div class="relative z-10">
+            <img src="dist/img/helmet-svgrepo-com (3) 1.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Konstruksi</h3>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Konstruksi mengikuti
+              gambar, RKS, Spektek, dan RAB, dengan manajemen kualitas dan efisiensi untuk kepuasan klien.</p>
+          </div>
+        </div>
+        </a>
+
+        <!-- Layanan 3 -->
+        <a href="detail.html#perbaikan-penyewaan">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group">
+          <div
+            class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full">
+          </div>
+          <div class="relative z-10">
+            <img src="dist/img/SVGRepo_iconCarrier.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Perbaikan & Penyewaan</h3>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Perbaikan difokuskan pada
+              struktur, arsitektur, dan modernisasi berdasarkan permintaan dan anggaran klien.</p>
+          </div>
+        </div>
+      </div>
+        </a>
+
+      <div class="text-center mt-10">
+      <h2 class="text-2xl font-semibold mb-4">Produk</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+        <a href="detail.html#lampu-suar">
+        <!-- Gambar produk dengan deskripsi alt -->
+        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/Desain tanpa judul (2) 1 (1).png" alt="Lampu Suar" />
+        <div class="p-5">
+            <!-- Judul produk -->
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lampu Suar</h5>
+          <!-- Deskripsi singkat produk -->
+          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari menawarkan berbagai macam lampu suar berkualitas yang terjamin.</p>
+          <!-- Tombol untuk membaca lebih lanjut -->
+          <div class="mt-16">
+            <p href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Baca lebih lanjut
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </p>
+          </div>
+        </div>
+          </a>
+      </div>
+
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+        <a href="detail.html#pelampung-suar">
+        <!-- Gambar produk dengan deskripsi alt -->
+        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/buy 1.png" alt="Pelampung Suar" />
+        <div class="p-5">
+            <!-- Judul produk -->
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pelampung Suar</h5>
+          <!-- Deskripsi singkat produk -->
+          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari menawarkan pelampung suar berkualitas tinggi dengan daya tahan terbaik, memastikan keselamatan dan visibilitas optimal di laut.</p>
+          <!-- Tombol untuk membaca lebih lanjut -->
+          <div class="mt-10">
+            <p href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Baca lebih lanjut
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </p>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+        <a href="detail.html#rantai">
+        <!-- Gambar produk dengan deskripsi alt -->
+        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/WhatsApp Image 2024-09-26 at 12.43.38 (1) 1.png" alt="Rantai" />
+        <div class="p-5">
+            <!-- Judul produk -->
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rantai</h5>
+          <!-- Deskripsi singkat produk -->
+          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari menawarkan rantai berkualitas tinggi dengan kekuatan dan daya tahan luar biasa, ideal untuk kebutuhan maritim yang membutuhkan keselamatan dan keandalan.</p>
+          <!-- Tombol untuk membaca lebih lanjut -->
+          <p href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Baca lebih lanjut
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </p>
+        </div>
+        </a>
+      </div>
+        
+
+
+    </div>
+    </div>
+  </div>
+  <div class="max-w-4xl mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-8">Pertanyaan yang Sering Diajukan</h1>
+    <div class="space-y-4">
+      <div class="border rounded-lg overflow-hidden">
+        <button
+          class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
+          onclick="toggleAnswer('answer1', this)">
+          <span>Apa itu Mooring Buoy?</span>
+          <span class="arrow text-xl" id="arrow1">&#9662;</span> <!-- Panah ke bawah -->
+        </button>
+        <div id="answer1" class="answer">
+          <div class="bg-gray-100 px-4 py-2">
+            <p>Mooring buoy adalah pelampung yang digunakan untuk mengamankan kapal di air tanpa menggunakan jangkar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button
+          class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
+          onclick="toggleAnswer('answer2', this)">
+          <span>Apa manfaat menggunakan Mooring Buoy?</span>
+          <span class="arrow text-xl" id="arrow2">&#9662;</span> <!-- Panah ke bawah -->
+        </button>
+        <div id="answer2" class="answer">
+          <div class="bg-gray-100 px-4 py-2">
+            <p>Manfaatnya termasuk kenyamanan dan efisiensi, karena kapal dapat segera berlabuh tanpa menggunakan
+              jangkar. Ini juga ramah lingkungan, mencegah kerusakan pada dasar laut, seperti terumbu karang. Mooring
+              buoy menyediakan tempat berlabuh yang lebih stabil, mengurangi risiko kapal bergerak karena angin atau
+              arus laut.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button
+          class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
+          onclick="toggleAnswer('answer3', this)">
+          <span>Apa itu Beacon Light?</span>
+          <span class="arrow text-xl" id="arrow3">&#9662;</span> <!-- Panah ke bawah -->
+        </button>
+        <div id="answer3" class="answer">
+          <div class="bg-gray-100 px-4 py-2">
+            <p>Beacon light adalah alat bantu navigasi yang dipasang di laut atau sepanjang pantai untuk membantu
+              memandu kapal, biasanya menandai lokasi berbahaya atau sinyal lalu lintas maritim.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button
+          class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
+          onclick="toggleAnswer('answer4', this)">
+          <span>Apakah CV Mekar Sari berpengalaman dalam menangani proyek skala besar?</span>
+          <span class="arrow text-xl" id="arrow4">&#9662;</span> <!-- Panah ke bawah -->
+        </button>
+        <div id="answer4" class="answer">
+          <div class="bg-gray-100 px-4 py-2">
+            <p>Ya, kami memiliki pengalaman dalam menangani berbagai proyek skala besar, terutama di sektor maritim dan
+              offshore. Kami telah bekerja dengan banyak klien untuk memenuhi kebutuhan proyek konstruksi dan perbaikan
+              kapal serta infrastruktur laut.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleAnswer(answerId, button) {
+      const answerElement = document.getElementById(answerId);
+      const arrowElement = button.querySelector('.arrow');
+
+      answerElement.classList.toggle('show'); // Tambahkan atau hapus kelas 'show'
+
+      // Ganti ikon panah
+      if (answerElement.classList.contains('show')) {
+        arrowElement.innerHTML = '&#9652;'; // Panah ke atas
+      } else {
+        arrowElement.innerHTML = '&#9662;'; // Panah ke bawah
+      }
+    }
+  </script>
+  <section id="ContactUs" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-mekarsari mb-4">Hubungi Kami</h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <iframe class="rounded-xl shadow-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126946.99314785004!2d106.73786401748663!3d-6.118110354762717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1f51a5532b4f%3A0x4c130f478a3e3b17!2sCV.%20MEKAR%20SARI!5e0!3m2!1sid!2sid!4v1727754534156!5m2!1sid!2sid"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-5 md:px-10 py-10">
+    <!-- Informasi Kontak -->
+    <div class="self-start">
+      <img src="dist/icon/location-pin-svgrepo-com-removebg-preview 1.svg" alt="Lokasi"
+        class="mb-4 w-12 h-12 md:w-auto md:h-auto">
+      <h4 class="text-mekarsari font-semibold text-lg md:text-xl">Lokasi :</h4>
+      <p class="text-sm md:text-base">Jl. Ganggeng VII No.6, RT.4/RW.7, Sungai Bambu, Kec. Tj. Priok, Jkt Utara, Daerah
+        Khusus Ibukota Jakarta 14330</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-6">
+        <!-- Bagian Email -->
+        <div>
+          <img src="dist/icon/_x35_.svg" alt="Ikon Email" class="mb-4 w-12 h-12 md:w-auto md:h-auto">
+          <h4 class="text-mekarsari font-semibold text-lg md:text-xl">Email :</h4>
+          <p class="text-sm md:text-base">Cv.mekarsarics@gmail.com</p>
+          <p class="text-sm md:text-base">Mekar_sari_cv@yahoo.com</p>
+        </div>
+        <!-- Bagian Telepon -->
+        <div>
+          <img src="dist/icon/phone-out.svg" alt="Ikon Telepon" class="mb-4 w-12 h-12 md:w-auto md:h-auto">
+          <h4 class="text-mekarsari font-semibold text-lg md:text-xl">Telepon :</h4>
+          <p class="text-sm md:text-base">+6281282697408</p>
+          <p class="text-sm md:text-base">+6281282697408</p>
+        </div>
+      </div>
+    </div>
+    <!-- Form Kontak -->
+    <form action="#" class="bg-white p-5 md:p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl md:text-2xl font-semibold text-mekarsari mb-4 md:mb-6">Hubungi Kami</h2>
+
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-bold mb-2">Nama <span class="text-red-600">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Nama Anda"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari">
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold mb-2">Email <span class="text-red-600">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Email Anda"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari">
+      </div>
+
+      <div class="mb-4">
+        <label for="message" class="block text-gray-700 font-bold mb-2">Pesan</label>
+        <textarea id="message" name="message" rows="4" placeholder="Pesan Anda"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari"></textarea>
+      </div>
+
+      <div class="flex justify-end">
+        <button type="submit"
+          class="bg-mekarsari text-white px-6 py-2 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-mekarsari">
+          Kirim Pesan
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a[href^="#"]');
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

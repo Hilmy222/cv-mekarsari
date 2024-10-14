@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEKARSARI</title>   
+    <link rel="icon" type="image/png" href="dist/img/Logo-Mekar-Sari 3.png">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar-->
+  <div class="bg-white bg-opacity-5 text-mekarsari shadow-lg md:block hidden">
+    <div class="container mx-auto flex items-center h-24">
+      <a href="index-en.html" class="flex items-center justify-center">
+        <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
+        <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+      </a>
+      <nav class="contents font-semibold text-base lg:text-lg">
+        <ul class="mx-auto flex items-center">
+          <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="index-en.html">Home</a>
+          </li>
+          <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="#about-us">About</a>
+          </li>
+          <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="#Service&Product">Service & Product</a>
+          </li>
+          <li class="p-5 xl:p-8 text-sm">
+            <a href="index-id.html">
+              <img src="dist/img/in-removebg-preview.png" alt="Indonesia" class="w-8 h-8 inline-block mx-2" />
+              <span>English</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#ContactUs">
+      <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white">Contact Us</button>
+    </a>
+  </div>
+  </div>
+  <!-- Responsive Navbar for smaller screens -->
+  <div class="block md:hidden bg-white shadow-lg p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index-en.html" class="flex items-center">
+        <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
+        <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
+      </a>
+      <button id="mobile-menu-toggle" class="focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
+      <a href="index-en.html" class="block text-base font-medium">Home</a>
+      <a href="#about-us" class="block text-base font-medium">About</a>
+      <a href="#Service&Product" class="block text-base font-medium">Service & Product</a>
+      <a href="index-id.html" class="flex items-center">
+        <img src="dist/img/in-removebg-preview.png" alt="Indonesia" class="w-6 h-6 inline-block mr-2" />
+        <span>English</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
