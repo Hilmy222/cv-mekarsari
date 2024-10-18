@@ -32,7 +32,7 @@
 
 
  <!--Navbar-->
-<div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
+ <div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
   <div class="container mx-auto flex items-center h-24">
     <a href="index-id.html" class="flex items-center justify-center">
       <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
@@ -58,10 +58,11 @@
       </ul>
     </nav>
     <a href="#ContactUs">
-    <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white transition-all duration-300">Hubungi Kami</button>
-  </a>
+      <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white transition-all duration-300">Hubungi Kami</button>
+    </a>
+  </div>
 </div>
-</div>
+
 <!-- Responsive Navbar for smaller screens -->
 <div class="block md:hidden bg-white shadow-lg p-4">
   <div class="container mx-auto flex justify-between items-center">
@@ -86,28 +87,34 @@
   </div>
 </div>
 
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('navbar');
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-  <script>
-    let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
+  // Set navbar to visible when the page loads
+  navbar.classList.remove('-translate-y-full');
 
-// Set navbar to visible when the page loads
-navbar.classList.remove('-translate-y-full');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-window.addEventListener('scroll', () => {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.add('-translate-y-full');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('-translate-y-full');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure we don't get negative scroll values
+  });
 
-  if (scrollTop > lastScrollTop) {
-    // Scrolling down
-    navbar.classList.add('-translate-y-full');
-  } else {
-    // Scrolling up
-    navbar.classList.remove('-translate-y-full');
-  }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure we don't get negative scroll values
-});
+  // Toggle mobile menu
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
-  </script>
 
 
   <!--Hero Section-->
