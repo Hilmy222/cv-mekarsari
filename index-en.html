@@ -22,91 +22,113 @@
   </head>
   <body class="font-sans mx-auto max-w-[1920] scroll-smooth ">
 
-    <!--Navbar-->
-  <div class="bg-white bg-opacity-5 text-mekarsari shadow-lg md:block hidden">
-    <div class="container mx-auto flex items-center h-24">
-      <a href="index-en.html" class="flex items-center justify-center">
-        <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
-        <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
-      </a>
-      <nav class="contents font-semibold text-base lg:text-lg">
-        <ul class="mx-auto flex items-center">
-          <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-            <a href="index-en.html">Home</a>
-          </li>
-          <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-            <a href="#about-us">About</a>
-          </li>
-          <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-            <a href="#Service&Product">Service & Product</a>
-          </li>
-          <li class="p-5 xl:p-8 text-sm">
-            <a href="index-id.html">
-              <img src="dist/img/in-removebg-preview.png" alt="Indonesia" class="w-8 h-8 inline-block mx-2" />
-              <span>English</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#ContactUs">
-      <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white">Contact Us</button>
+  <!-- Navbar -->
+<div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
+  <div class="container mx-auto flex items-center h-24">
+    <a href="index-en.html" class="flex items-center justify-center">
+      <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
+      <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+    </a>
+    <nav class="contents font-semibold text-base lg:text-lg">
+      <ul class="mx-auto flex items-center">
+        <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="index-en.html">Home</a>
+        </li>
+        <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="#about-us">About Us</a>
+        </li>
+        <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="#Service&Product">Services & Products</a>
+        </li>
+        <li class="p-5 xl:p-8 text-sm">
+          <a href="index-id.html">
+            <img src="dist/img/in-removebg-preview.png" alt="Indonesia" class="w-8 h-8 inline-block mx-2" />
+            <span>English</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#ContactUs">
+      <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white transition-all duration-300">Contact Us</button>
     </a>
   </div>
+</div>
+
+<!-- Responsive Navbar for smaller screens -->
+<div class="block md:hidden bg-white shadow-lg p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="index-en.html" class="flex items-center">
+      <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
+      <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
+    </a>
+    <button id="mobile-menu-toggle" class="focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
   </div>
-  <!-- Responsive Navbar for smaller screens -->
-  <div class="block md:hidden bg-white shadow-lg p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="index-en.html" class="flex items-center">
-        <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
-        <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
-      </a>
-      <button id="mobile-menu-toggle" class="focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
-      <a href="index-en.html" class="block text-base font-medium">Home</a>
-      <a href="#about-us" class="block text-base font-medium">About</a>
-      <a href="#Service&Product" class="block text-base font-medium">Service & Product</a>
-      <a href="index-id.html" class="flex items-center">
-        <img src="dist/img/in-removebg-preview.png" alt="Indonesia" class="w-6 h-6 inline-block mr-2" />
-        <span>English</span>
-      </a>
-    </div>
+  <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
+    <a href="index-en.html" class="block text-base font-medium">Home</a>
+    <a href="#about-us" class="block text-base font-medium">About Us</a>
+    <a href="#Service&Product" class="block text-base font-medium">Services & Products</a>
+    <a href="index-id.html" class="flex items-center">
+      <img src="dist/img/inddo-removebg-preview.png" alt="Indonesia" class="w-6 h-6 inline-block mr-2" />
+      <span>English</span>
+    </a>
   </div>
+</div>
 
-  <script>
-    document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
-      var menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    });
-  </script>
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('navbar');
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
+  // Set navbar to visible when the page loads
+  navbar.classList.remove('-translate-y-full');
 
-      <!--Hero Section-->
-  <div class="relative font-sans container pl-4 md:pl-16 mt-10">
-    <div class="absolute inset-0">
-        <img src="dist/img/background-kiri.png" alt="Background Image" class="w-full h-full object-cover md:w-1/2">
-    </div>
-    <div class="relative z-10 text-white">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
-          <div class="mt-10 md:mt-36">
-              <h1 class="font-semibold text-[36px] md:text-[55px] leading-tight">
-                <span class="text-mekarsari">CV Mekar Sari</span>
-              </h1>
-              <p class="py-1 text-black">
-                <span class="font-semibold">"Since 1986: Your Trusted Offshore and Marine Partner"</span>
-                <span class="text-secondGray">With decades of experience, CV Mekar Sari has earned a solid reputation as a reliable contractor and supplier, delivering high-quality solutions for the Offshore and Marine industry.</span>
-              </p>
-          </div>
-          <div class="flex justify-center md:justify-end items-center">
-            <img src="dist/img/file.png" alt="" class="w-full max-w-[300px] md:max-w-[600px] h-auto object-cover rounded-xl">
-          </div>
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.add('-translate-y-full');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('-translate-y-full');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure we don't get negative scroll values
+  });
+
+  // Toggle mobile menu
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- Hero Section -->
+<div class="relative font-sans container pl-4 md:pl-16 mt-10 pt-24">
+  <div class="absolute inset-0">
+    <img src="dist/img/background-kiri.png" alt="Background Image" class="w-full h-full object-cover md:w-1/2 md:pt-14">
+  </div>
+  <div class="relative z-10 text-white">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
+      <div class="mt-10 md:mt-36">
+        <h1 class="font-semibold text-[36px] md:text-[55px] leading-tight">
+          <span class="text-mekarsari">CV Mekar Sari</span>
+        </h1>
+        <p class="py-1 text-black">
+          <span class="font-semibold">"Since 1986: Your Trusted Partner in the Offshore and Marine Industry"</span>
+          <span class="text-secondGray">With decades of experience, CV Mekar Sari has built a solid reputation as a reliable contractor and supplier, providing high-quality solutions for the Offshore and Marine industry.</span>
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end items-center">
+        <img src="dist/img/file.png" alt="Hero Image" class="w-full max-w-[300px] md:max-w-[600px] h-auto object-cover rounded-xl">
       </div>
     </div>
   </div>
+</div>
+
 
 
       <!-- About Us Section with Vision & Mission -->
@@ -137,138 +159,157 @@
               </p>
             </div>
           </div>
-          
-
-          <!-- Vision & Mission Section -->
-          <div class="mt-16 text-center">
-            <h3 class="text-3xl font-bold text-mekarsari mb-6">Vision & Mission</h3>
-
-            <!-- Vision Section -->
-            <div class="mb-12">
-              <h4 class="text-2xl font-semibold text-secondBlack mb-3">Vision</h4>
-              <p class="text-lg text-secondGray max-w-3xl mx-auto">
-                Becoming a company in the service and service provider industry contractor in the first Contractor and Supplier sector international standards that have a competitive advantage in the global market.
-              </p>
-            </div>
-
-            <!-- Mission Section -->
-            <div>
-              <h4 class="text-2xl font-semibold text-secondBlack mb-3">Mission</h4>
-              <ul class="text-lg text-secondGray max-w-3xl mx-auto list-disc list-inside">
-                <li class="mb-2">We offer high-quality solutions to consumer problems in Consulting, Construction, and Trading & Procurement for Offshore and Marine Services.</li>
-                <li class="mb-2">Driven by the capability and commitment of our Human Resources, we aim to deliver effective and sustainable results.</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
+          
+
+        <div class="px-3 md:px-20 flex sm:flex-col-reverse md:flex-row">
+            <div class="md:w-1/2">
+              <h1 class="text-3xl font-semibold text-mekarsari">Vision & Mission</h1>
+              <p class="py-6">Becoming a leader in the service industry, providing high-quality solutions for maritime and offshore needs.</p>
+          
+              <div class="px-3">
+                <h1 class="text-xl text-mekarsari font-medium py-3">Vision</h1>
+                <div class="flex flex-col gap-3 mb-3 text-sm">
+                  <div class="flex gap-3 items-start">
+                    <img src="dist/icon/visi1.svg" alt="" class="w-7 h-7">
+                    <h1>To become a company in the service industry and a provider of contractor services in the Contractor sector.</h1>
+                  </div>
+                  <div class="flex gap-3 items-start">
+                    <img src="dist/icon/visi2.svg" alt="" class="w-7 h-7">
+                    <h1>The first international-standard supplier with a competitive edge in the global market.</h1>
+                  </div>
+                </div>
+          
+                <h1 class="text-xl text-mekarsari font-medium py-3">Mission</h1>
+                <div class="flex flex-col gap-3 text-sm">
+                  <div class="flex gap-3 items-start">
+                    <img src="dist/icon/misi1.svg" alt="" class="w-7 h-7">
+                    <h1>Offering high-quality solutions for customer issues in Consultation, Construction, and Trading & Procurement for Offshore and Marine Services.</h1>
+                  </div>
+                  <div class="flex gap-3 items-start">
+                    <img src="dist/icon/misi2.svg" alt="" class="w-7 h-7">
+                    <h1>Driven by the capabilities and commitment of our Human Resources, we aim to deliver effective and sustainable results.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 flex justify-end">
+              <img src="dist/img/image 6.png" alt="" class="h-[200px] w-full hidden md:block md:h-[478px] object-cover rounded-xl md:w-3/4">
+            </div>
+        </div>
+          
 
       <!-- Product & Service -->
   <div id="Service&Product" class="py-14">
-    <div class="container mx-auto px-8">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-mekarsari mb-4">Product & Service</h2>
-        <p class="text-lg text-secondGray max-w-xl mx-auto">We offer a variety of high-quality services and products to meet your needs in the Offshore and Marine sectors.</p>
-      </div>
-      <div class="text-center mb-4 py-4">
-        <h2 class="text-2xl font-semibold">Service</h2>
-      </div>
-
-      <!-- Grid for Service & Product Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        
-        <!-- Service 1 -->
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <img src="dist/img/plan-list-svgrepo-com 1.png" alt="Service 1" class="w-[100px] mx-auto mb-4">
-          <h3 class="text-xl font-bold text-mekarsari mb-2">Planning</h3>
-          <p class="text-secondGray">Feasibility study includes surveys, consultations, and creating drawings and specifications.</p>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <img src="dist/img/helmet-svgrepo-com (3) 1.png" alt="Service 2" class="w-[100px] mx-auto mb-4">
-          <h3 class="text-xl font-bold text-mekarsari mb-2">Contruction</h3>
-          <p class="text-secondGray">Construction follows drawings, RKS, Spektek, and RAB, with quality management and efficiency for client satisfaction.</p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <img src="dist/img/SVGRepo_iconCarrier.png" alt="Service 3" class="w-[100px] mx-auto mb-4">
-          <h3 class="text-xl font-bold text-mekarsari mb-2">Repair & Rental</h3>
-          <p class="text-secondGray">Repairs focus on structure, architecture, and modernization based on client requests and budget.</p>
-        </div>
-      </div>
-      <div class="text-center mt-10">
-        <h2 class="text-2xl font-semibold mb-4">Product</h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div class="mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-            <!-- Gambar produk dengan deskripsi alt -->
-            <img class="rounded-t-lg w-full h-auto object-cover" src="dist/img/Desain tanpa judul (2) 1 (1).png" alt="Beacon Light" />
-          <div class="p-5">
-            <a href="#">
-                <!-- Judul produk -->
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Beacon Light</h5>
-            </a>
-            <!-- Deskripsi singkat produk -->
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari offers a complete range of quality guaranteed marine lanterns.</p>
-            <!-- Tombol untuk membaca lebih lanjut -->
-            <div class="mt-16">
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                  </svg>
-              </a>
-          </div>
-          </div>
-        </div>
-
-        <div class="mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-          <!-- Gambar produk dengan deskripsi alt -->
-          <img class="rounded-t-lg w-full h-auto object-cover" src="dist/img/buy 1.png" alt="Beacon Light" />
-        <div class="p-5">
-          <a href="#">
-              <!-- Judul produk -->
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Beacon Bouy</h5>
-          </a>
-          <!-- Deskripsi singkat produk -->
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari offers high quality beacon buoys with the best durability, ensuring optimal safety and visibility at sea.</p>
-          <!-- Tombol untuk membaca lebih lanjut -->
-          <div class="mt-10">
-          <a href="#" class=" inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
-        </div>
-        </div>
-      </div>
-
-      <div class="mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-        <!-- Gambar produk dengan deskripsi alt -->
-        <img class="rounded-t-lg w-full h-auto object-cover" src="dist/img/WhatsApp Image 2024-09-26 at 12.43.38 (1) 1.png" alt="Beacon Light" />
-      <div class="p-5">
-        <a href="#">
-            <!-- Judul produk -->
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chain</h5>
-        </a>
-        <!-- Deskripsi singkat produk -->
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari offers high quality chains with exceptional strength and durability, ideal for maritime needs that demand safety and reliability.</p>
-        <!-- Tombol untuk membaca lebih lanjut -->
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-      </div>
+  <div class="container mx-auto px-20">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-mekarsari mb-4">Products & Services</h2>
+      <p class="text-lg text-secondGray max-w-xl mx-auto">
+        We offer a wide range of high-quality services and products to meet your needs in the Offshore and Maritime sector.
+      </p>
     </div>
+    <div class="text-center mb-4 py-4">
+      <h2 class="text-2xl font-semibold">Services</h2>
+    </div>
+
+    <!-- Service & Product Card Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 z-0">
+
+      <!-- Service 1 -->
+      <a href="detail.html#planning">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group z-0">
+          <div class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full"></div>
+          <div class="relative z-10">
+            <img src="dist/img/plan-list-svgrepo-com 1.png" alt="Planning Service" class="w-[100px] mx-auto mb-4">
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Planning</h3>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">
+              Feasibility studies include surveys, consulting, and creating drawings and specifications.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Service 2 -->
+      <a href="detail.html#construction">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group">
+          <div class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full"></div>
+          <div class="relative z-10">
+            <img src="dist/img/helmet-svgrepo-com (3) 1.png" alt="Construction Service" class="w-[100px] mx-auto mb-4">
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Construction</h3>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">
+              Construction follows drawings, RKS, specifications, and RAB with quality management and efficiency for client satisfaction.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Service 3 -->
+      <a href="detail.html#repair-rental">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group">
+          <div class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full"></div>
+          <div class="relative z-10">
+            <img src="dist/img/SVGRepo_iconCarrier.png" alt="Repair & Rental Service" class="w-[100px] mx-auto mb-4">
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Repair & Rental</h3>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">
+              Repairs focus on structure, architecture, and modernization based on client requests and budget.
+            </p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <h2 class="text-2xl font-semibold mb-4">Products</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Product 1 -->
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="detail.html#beacon-lights">
+          <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/Desain tanpa judul (2) 1 (1).png" alt="Beacon Lights" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Beacon Lights</h5>
+            <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">
+              CV Mekar Sari offers a variety of high-quality beacon lights.
+            </p>
+           
+          </div>
+        </a>
       </div>
+
+      <!-- Product 2 -->
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="detail.html#buoys">
+          <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/buy 1.png" alt="Buoys" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Buoys</h5>
+            <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">
+              CV Mekar Sari offers high-quality buoys with the best durability, ensuring safety and optimal visibility at sea.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="detail.html#chains">
+          <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/WhatsApp Image 2024-09-26 at 12.43.38 (1) 1.png" alt="Chains" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Chains</h5>
+            <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">
+              CV Mekar Sari offers high-quality chains with excellent strength and durability, ideal for maritime needs requiring safety and reliability.
+            </p>
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
+</div>
+
   <!-- End Product & Service -->
   <div class="max-w-4xl mx-auto p-4">
     <h1 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
