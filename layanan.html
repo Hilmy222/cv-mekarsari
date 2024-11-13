@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>MEKARSARI</title>
+    <link rel="icon" type="image/png" href="dist/img/Logo-Mekar-Sari 3.png">
+    <style>
+
+        .text-white {
+            color: white;
+        }
+
+        .active {
+            background-color: #05308c; /* Replace with your actual color */
+            color: white;
+        }
+
+        .product-card {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Navbar -->
+    <div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
+        <div class="container mx-auto flex items-center h-24">
+            <a href="index-id.html" class="flex items-center justify-center">
+                <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
+                <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+            </a>
+            <nav class="contents font-semibold text-base lg:text-lg">
+                <ul class="mx-auto flex items-center">
+                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+                        <a href="index-id.html" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+                        <a href="index-id.html#about-us" class="nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
+                        <a href="index-id.html#Service&Product" class="nav-link">Layanan & Produk</a>
+                    </li>
+                    <li class="p-5 xl:p-8 text-sm">
+                        <a href="index-en.html">
+                            <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-8 h-8 inline-block mx-2" />
+                            <span>Indonesia</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#ContactUs">
+                <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white">Hubungi Kami</button>
+            </a>
+        </div>
+    </div>
+    <!-- Responsive Navbar for smaller screens -->
+    <div class="block md:hidden bg-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index-id.html" class="flex items-center">
+                <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
+                <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
+            </a>
+            <button id="mobile-menu-toggle" class="focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
+            <a href="index-id.html" class="block text-base font-medium">Beranda</a>
+            <a href="#about-us" class="block text-base font-medium">Tentang Kami</a>
+            <a href="#Service&Product" class="block text-base font-medium">Layanan & Produk</a>
+            <a href="index-en.html" class="flex items-center">
+                <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-6 h-6 inline-block mr-2" />
+                <span>Indonesia</span>
+            </a>
+        </div>
+    </div>
+    <div class="pt-16 md:pt-44 container px-3 md:px-40 flex flex-col-reverse md:flex-row lg:flex-row gap-12">
+        <!-- Sidebar -->
+        <div class="bg-slate-50 p-7 md:w-1/4 cursor-default">
+            <div class="flex flex-col space-y-1 my-3">
+                <h1 class="font-medium">Layanan</h1>
+                <div class="bg-mekarsari rounded full px-0 py-[2px] w-[50px]"></div>
+            </div>
+            <div class="flex flex-col gap-3 text-sm">
+                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="perencanaan">
+                    <h1>Perencanaan</h1>
+                    <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
+                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="konstruksi">
+                    <h1>Konstruksi</h1>
+                    <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
+                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="perbaikan-penyewaan">
+                    <h1 id="title">Perbaikan & Penyewaan</h1>
+                    <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
+                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Card Produk -->
+        <div class="md:w-3/4">
+            <div id="lampu-suar" class="product-card" style="display: block;">
+                <h1 class="font-semibold text-3xl pb-5">Lampu Suar</h1>
+                <img src="dist/img/Light.png" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-base pt-3 pb-8 text-gray-500">CV Mekar Sari menawarkan pelampung suar berkualitas tinggi dengan daya tahan terbaik, memastikan keselamatan dan visibilitas optimal di laut.</p>
+            </div>
+            <div id="pelampung-suar" class="product-card" style="display: none;">
+                <h1 class="font-semibold text-3xl pb-5">Pelampung Suar</h1>
+                <img src="dist/img/buy 1.png" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div id="rantai" class="product-card" style="display: none;">
+                <h1 class="font-semibold text-3xl pb-5">Rantai</h1>
+                <img src="dist/img/Rantai.png" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
+            </div>
+            <div id="perencanaan" class="product-card" style="display: none;">
+                <h1 class="font-semibold text-3xl pb-5">Perencanaan</h1>
+                <img src="dist/img/example.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
+            </div>
+            <div id="konstruksi" class="product-card" style="display: none;">
+                <h1 class="font-semibold text-3xl pb-5">Konstruksi</h1>
+                <img src="dist/img/example.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
+            </div>
+            <div id="perbaikan-penyewaan" class="product-card" style="display: none;">
+                <h1 class="font-semibold text-3xl pb-5">Perbaikan & Penyewaan</h1>
+                <img src="dist/img/example.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
+            </div>
+        </div>
+        <!-- End Card Produk -->
+    </div>
+
+    <script>
+        document.querySelectorAll('.product-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove active class from all product items
+                document.querySelectorAll('.product-item').forEach(i => {
+                    i.classList.remove('bg-mekarsari', 'text-white', 'active');
+                });
+
+                // Add active class to the clicked item
+                item.classList.add('bg-mekarsari', 'text-white', 'active');
+
+                const targetId = item.getAttribute('data-target');
+
+                // Hide all product cards
+                document.querySelectorAll('.product-card').forEach(card => {
+                    card.style.display = 'none';
+                    card.style.opacity = '0'; // Start with opacity 0
+                    card.style.transform = 'translateX(-50px)'; // Start off-screen
+                });
+
+                // Show the selected product card
+                const targetCard = document.getElementById(targetId);
+                targetCard.style.display = 'block';
+                targetCard.style.opacity = '0'; // Set to 0 for fade-in effect
+                targetCard.style.transform = 'translateX(-50px)'; // Start off-screen
+
+                // Force reflow to restart the transition
+                void targetCard.offsetWidth;
+
+                // Apply the final styles for animation
+                targetCard.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                targetCard.style.opacity = '1'; // Fade in
+                targetCard.style.transform = 'translateX(0)'; // Slide in
+            });
+        });
+    </script>
+    <script>
+        const titleElement = document.getElementById('title');
+        const text = titleElement.innerText;
+
+        if (text.length > 14) {
+            titleElement.innerText = text.slice(0, 14) + '...';
+        }
+    </script>
+    <script>
+        // Cek jika ada hash di URL
+document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash; // Mendapatkan hash dari URL
+    if (hash) {
+        // Cari elemen yang sesuai dengan hash
+        const targetItem = document.querySelector(`.product-item[data-target="${hash.slice(1)}"]`);
+        if (targetItem) {
+            targetItem.click(); // Simulasikan klik pada item yang sesuai
+        }
+    }
+});
+
+    </script>
+</body>
+
+</html>
