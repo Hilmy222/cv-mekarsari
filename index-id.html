@@ -513,51 +513,6 @@
         </button>
       </div>
     </form>
-    
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-      // Inisialisasi EmailJS
-      (function() {
-        console.log("Inisialisasi EmailJS...");
-        emailjs.init("NnQC8xK2kcimrAKQO"); // Ganti dengan Public Key (User ID) Anda
-        console.log("EmailJS diinisialisasi dengan Public Key.");
-      })();
-    
-      // Ambil form dan tambahkan event listener
-      document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        console.log("Form submit event terdeteksi.");
-    
-        // Ambil data input dari form
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-    
-        console.log("Data form:", { name, email, message });
-    
-        const templateParams = {
-          from_name: name,
-          from_email: email,
-          message: message,
-        };
-    
-        // Log templateParams
-        console.log("Mengirim email dengan templateParams:", templateParams);
-    
-        // Kirim email menggunakan EmailJS
-        emailjs.send("service_7z6rwsn", "template_106u4kh", templateParams)
-          .then((response) => {
-            alert("Pesan berhasil dikirim!");
-            console.log("SUCCESS! Status:", response.status, "Text:", response.text);
-            document.getElementById("contact-form").reset();
-          })
-          .catch((error) => {
-            alert("Gagal mengirim pesan. Coba lagi.");
-            console.error("FAILED... Error:", error);
-          });
-      });
-    </script>
-    
   </div>
   <footer>
     <div class="container">
@@ -569,7 +524,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script>
 
     document.addEventListener('DOMContentLoaded', function () {
