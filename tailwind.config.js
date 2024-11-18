@@ -21,6 +21,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Poppins'],  // Font default yang diatur ke Poppins
+      jkt : ['Plus Jakarta Sans'], 
     },
     
   },
