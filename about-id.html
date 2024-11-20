@@ -25,60 +25,92 @@
 </head>
 
 <body class="font-sans">
-    <!-- Navbar -->
-    <div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
-        <div class="container mx-auto flex items-center h-24">
-            <a href="index-id.html" class="flex items-center justify-center">
-                <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
-                <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
-            </a>
-            <nav class="contents font-semibold text-base lg:text-lg">
-                <ul class="mx-auto flex items-center">
-                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-                        <a href="index-id.html" class="nav-link">Beranda</a>
-                    </li>
-                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-                        <a href="#" class="nav-link">Tentang Kami</a>
-                    </li>
-                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-                        <a href="index-id.html#Service&Product" class="nav-link">Layanan & Produk</a>
-                    </li>
-                    <li class="p-5 xl:p-8 text-sm">
-                        <a href="index-en.html">
-                            <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-8 h-8 inline-block mx-2" />
-                            <span>Indonesia</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#ContactUs">
-                <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white duration-500">Hubungi Kami</button>
-            </a>
-        </div>
-    </div>
-    <!-- Responsive Navbar for smaller screens -->
-    <div class="block md:hidden bg-white shadow-lg p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index-id.html" class="flex items-center">
-                <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
-                <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
-            </a>
-            <button id="mobile-menu-toggle" class="focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
-            <a href="index-id.html" class="block text-base font-medium">Beranda</a>
-            <a href="#about-us" class="block text-base font-medium">Tentang Kami</a>
-            <a href="#Service&Product" class="block text-base font-medium">Layanan & Produk</a>
-            <a href="index-en.html" class="flex items-center">
-                <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-6 h-6 inline-block mr-2" />
-                <span>Indonesia</span>
-            </a>
-        </div>
-    </div>
+ <!--Navbar-->
+ <div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
+  <div class="container mx-auto flex items-center h-24">
+    <a href="index-id.html" class="flex items-center justify-center">
+      <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
+      <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+    </a>
+    <nav class="contents font-semibold text-base lg:text-lg">
+      <ul class="mx-auto flex md:gap-8 items-center">
+        <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="index-id.html">Beranda</a>
+        </li>
+        <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="about-id.html">Tentang Kami</a>
+        </li>
+        <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="produk.html#lampu-suar">Produk</a>
+        </li>
+        <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="layanan.html#perencanaan">Layanan</a>
+        </li>
+        <li class="p-5 md:py-2 md:px-2 text-sm">
+          <a href="index-en.html">
+            <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-8 h-8 inline-block mx-2" />
+            <span>Indonesia</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#ContactUs">
+      <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white transition-all duration-300">Hubungi Kami</button>
+    </a>
+  </div>
+</div>
+
+<!-- Responsive Navbar for smaller screens -->
+<div class="block md:hidden bg-white shadow-lg p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="index-id.html" class="flex items-center">
+      <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
+      <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
+    </a>
+    <button id="mobile-menu-toggle" class="focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
+    <a href="index-id.html" class="block text-base font-medium">Beranda</a>
+    <a href="#about-us" class="block text-base font-medium">Tentang Kami</a>
+    <a href="#Service&Product" class="block text-base font-medium">Layanan & Produk</a>
+    <a href="index-en.html" class="flex items-center">
+      <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-6 h-6 inline-block mr-2" />
+      <span>Indonesia</span>
+    </a>
+  </div>
+</div>
+
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('navbar');
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  // Set navbar to visible when the page loads
+  navbar.classList.remove('-translate-y-full');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.add('-translate-y-full');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('-translate-y-full');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure we don't get negative scroll values
+  });
+
+  // Toggle mobile menu
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
     <div class="md:pt-24 flex flex-col gap-12 mx-auto">
         <div class="relative w-full">
             <div class="relative w-full h-[240px] md:h-[300px]">

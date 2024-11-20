@@ -25,60 +25,92 @@
 </head>
 
 <body class="font-sans">
-    <!-- Navbar -->
-    <div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
-        <div class="container mx-auto flex items-center h-24">
-            <a href="index-id.html" class="flex items-center justify-center">
-                <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
-                <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+     <!--Navbar-->
+ <div id="navbar" class="bg-white text-mekarsari shadow-lg md:block hidden fixed top-0 w-full z-50 transition-transform duration-500 transform">
+    <div class="container mx-auto flex items-center h-24">
+      <a href="index-id.html" class="flex items-center justify-center">
+        <img class="h-16 ml-4" src="dist/img/Logo-Mekar-Sari 3.png" alt="" />
+        <span class="ml-2 uppercase font-bold text-2xl">MEKAR SARI</span>
+      </a>
+      <nav class="contents font-semibold text-base lg:text-lg">
+        <ul class="mx-auto flex md:gap-8 items-center">
+          <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="index-id.html">Beranda</a>
+          </li>
+          <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="about-id.html">Tentang Kami</a>
+          </li>
+          <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="produk.html#lampu-suar">Produk</a>
+          </li>
+          <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+            <a href="layanan.html#perencanaan">Layanan</a>
+          </li>
+          <li class="p-5 md:py-2 md:px-2 text-sm">
+            <a href="index-en.html">
+              <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-8 h-8 inline-block mx-2" />
+              <span>Indonesia</span>
             </a>
-            <nav class="contents font-semibold text-base lg:text-lg">
-                <ul class="mx-auto flex items-center">
-                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-                        <a href="index-id.html" class="nav-link">Beranda</a>
-                    </li>
-                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-                        <a href="index-id.html#about-us" class="nav-link">Tentang Kami</a>
-                    </li>
-                    <li class="p-5 xl:p-8 text-sm hover:border-b-2 hover:border-mekarsari">
-                        <a href="index-id.html#Service&Product" class="nav-link">Layanan & Produk</a>
-                    </li>
-                    <li class="p-5 xl:p-8 text-sm">
-                        <a href="index-en.html">
-                            <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-8 h-8 inline-block mx-2" />
-                            <span>Indonesia</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#ContactUs">
-                <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white">Hubungi Kami</button>
-            </a>
-        </div>
+          </li>
+        </ul>
+      </nav>
+      <a href="#ContactUs">
+        <button class="mr-10 border-2 border-mekarsari rounded-full font-bold px-8 py-2 hover:bg-mekarsari hover:text-white transition-all duration-300">Hubungi Kami</button>
+      </a>
     </div>
-    <!-- Responsive Navbar for smaller screens -->
-    <div class="block md:hidden bg-white shadow-lg p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index-id.html" class="flex items-center">
-                <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
-                <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
-            </a>
-            <button id="mobile-menu-toggle" class="focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
-            <a href="index-id.html" class="block text-base font-medium">Beranda</a>
-            <a href="#about-us" class="block text-base font-medium">Tentang Kami</a>
-            <a href="#Service&Product" class="block text-base font-medium">Layanan & Produk</a>
-            <a href="index-en.html" class="flex items-center">
-                <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-6 h-6 inline-block mr-2" />
-                <span>Indonesia</span>
-            </a>
-        </div>
+  </div>
+  
+  <!-- Responsive Navbar for smaller screens -->
+  <div class="block md:hidden bg-white shadow-lg p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index-id.html" class="flex items-center">
+        <img class="h-12" src="dist/img/Logo-Mekar-Sari 3.png" alt="Logo" />
+        <span class="ml-2 text-xl font-bold">MEKAR SARI</span>
+      </a>
+      <button id="mobile-menu-toggle" class="focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
     </div>
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4">
+      <a href="index-id.html" class="block text-base font-medium">Beranda</a>
+      <a href="#about-us" class="block text-base font-medium">Tentang Kami</a>
+      <a href="#Service&Product" class="block text-base font-medium">Layanan & Produk</a>
+      <a href="index-en.html" class="flex items-center">
+        <img src="dist/img/inddo-removebg-preview.png" alt="Inggris" class="w-6 h-6 inline-block mr-2" />
+        <span>Indonesia</span>
+      </a>
+    </div>
+  </div>
+  
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    // Set navbar to visible when the page loads
+    navbar.classList.remove('-translate-y-full');
+  
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('-translate-y-full');
+      } else {
+        // Scrolling up
+        navbar.classList.remove('-translate-y-full');
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Ensure we don't get negative scroll values
+    });
+  
+    // Toggle mobile menu
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
     <div class="pt-16 md:pt-44 container px-3 md:px-40 flex flex-col-reverse md:flex-row lg:flex-row gap-12">
         <!-- Sidebar -->
         <div class="bg-slate-50 p-7 md:w-1/4 cursor-default">
@@ -88,19 +120,7 @@
             </div>
             <div class="flex flex-col gap-3 text-sm">
                 <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="lampu-suar">
-                    <h1>Lampu Suar</h1>
-                    <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
-                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="pelampung-suar">
                     <h1>Pelampung Suar</h1>
-                    <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
-                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="rantai">
-                    <h1>Rantai</h1>
                     <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
                         <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -117,14 +137,14 @@
                         <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
-                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="JoiningFoureyes">
-                    <h1>Joining Foureyes</h1>
+                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="MarkerBouy">
+                    <h1>Marker Bouy</h1>
                     <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
                         <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
-                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="MarkerBouy">
-                    <h1>Marker Bouy</h1>
+                <div class="product-item bg-white flex justify-between items-center px-3 py-2 border transition-all duration-500 group" data-target="MouringBouy">
+                    <h1>Mouring Bouy</h1>
                     <svg class="w-6 h-6 group-hover:stroke-white" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)">
                         <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -135,20 +155,10 @@
 
         <!-- Card Produk -->
         <div class="md:w-3/4">
-            <div id="lampu-suar" class="product-card" style="display: block;">
-                <h1 class="font-semibold text-3xl pb-5">Lampu Suar</h1>
-                <img src="dist/img/Light.png" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
-                <p class="text-base pt-3 pb-8 text-gray-500 text-justify">CV Mekar Sari menawarkan lampu suar dengan daya tahan tinggi dan visibilitas maksimal untuk memastikan keselamatan pelayaran. Produk kami menggunakan teknologi terbaru dan material berkualitas, sehingga dapat diandalkan dalam jangka waktu panjang.</p>
-            </div>
-            <div id="pelampung-suar" class="product-card" style="display: none;">
+            <div id="lampu-suar" class="product-card" style="display: none;">
                 <h1 class="font-semibold text-3xl pb-5">Pelampung Suar</h1>
                 <img src="dist/img/buy 1.png" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
                 <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </div>
-            <div id="rantai" class="product-card" style="display: none;">
-                <h1 class="font-semibold text-3xl pb-5">Rantai</h1>
-                <img src="dist/img/Rantai.png" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
-                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
             </div>
             <div id="Sinker" class="product-card" style="display: none;">
                 <h1 class="font-semibold text-3xl pb-5">Sinker</h1>
@@ -160,13 +170,13 @@
                 <img src="dist/img/SparBouy.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
                 <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
             </div>
-            <div id="JoiningFoureyes" class="product-card" style="display: none;">
-                <h1 class="font-semibold text-3xl pb-5">Joining Foureyes</h1>
-                <img src="dist/img/Joining Foureyes.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
-                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
-            </div>
             <div id="MarkerBouy" class="product-card" style="display: none;">
                 <h1 class="font-semibold text-3xl pb-5">Marker Bouy</h1>
+                <img src="dist/img/MarkerBouy.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
+                <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
+            </div>
+            <div id="MouringBouy" class="product-card" style="display: none;">
+                <h1 class="font-semibold text-3xl pb-5">Mouring Bouy</h1>
                 <img src="dist/img/MarkerBouy.jpg" alt="" class="w-full h-[200px] md:h-[360px] object-cover rounded-xl">
                 <p class="text-xs pt-3 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, mollitia...</p>
             </div>
@@ -174,6 +184,46 @@
         </div>
         <!-- End Card Produk -->
     </div>
+    <footer class="bg-mekarsari w-full px-6 py-24 flex flex-col gap-7 md:gap-0 justify-center items-center md:flex-row md:justify-between md:items-start text-white">
+        <h1 class="uppercase text-4xl font-semibold">CV. Mekarsari</h1>
+        <div class="flex flex-col gap-3 text-sm">
+          <h1 class="text-2xl font-medium md:font-normal md:text-base py-1 text-center md:text-start">Kontak Perusahaan</h1>
+          <div class="flex flex-col md:flex-row gap-2 items-center">
+            <img src="dist/icon/location.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
+            <div class="flex-col text-center md:text-start">
+              <h1 class="text-xs font-light">Indonesia</h1>
+              <h1>Tj. Priok, Jakarta Utara</h1>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-2 items-center">
+            <img src="dist/icon/telephone.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
+              <h1>+62 812-826-974-08</h1>
+          </div>
+          <div class="flex flex-col md:flex-row gap-2 items-center">
+            <img src="dist/icon/email.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
+            <div class="flex-col text-center md:text-start">
+              <h1>Cv.mekarsarics@gmail.com</h1>
+              <h1>Mekar_sari_cv@yahoo.com</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-center md:text-start gap-3 text-sm">
+          <h1 class="py-1 text-center md:text-start text-2xl md:text-base font-medium md:font-normal">Menu</h1>
+          <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Beranda</a>
+          <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Tentang Kami</a>
+          <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Produk & Layanan</a>
+          <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Hubungi Kami</a>
+        </div>
+        <div class="flex flex-col ga-3 hidden md:block">
+          <h1 class="py-1">Sosial Media</h1>
+          <div class="flex gap-3">
+            <img src="dist/icon/telephone.svg" alt="" class="w-5 h-5 p-1 bg-white rounded-full">
+            <img src="dist/icon/telephone.svg" alt="" class="w-5 h-5 p-1 bg-white rounded-full">
+            <img src="dist/icon/telephone.svg" alt="" class="w-5 h-5 p-1 bg-white rounded-full">
+            <img src="dist/icon/telephone.svg" alt="" class="w-5 h-5 p-1 bg-white rounded-full">
+          </div>
+        </div>
+      </footer>
 
     <script>
         document.querySelectorAll('.product-item').forEach(item => {

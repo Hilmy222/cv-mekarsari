@@ -47,7 +47,10 @@
           <a href="about-id.html">Tentang Kami</a>
         </li>
         <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
-          <a href="#Service&Product">Layanan & Produk</a>
+          <a href="produk.html#lampu-suar">Produk</a>
+        </li>
+        <li class="p-5 md:py-2 md:px-2 text-sm hover:border-b-2 hover:border-mekarsari">
+          <a href="layanan.html#perencanaan">Layanan</a>
         </li>
         <li class="p-5 md:py-2 md:px-2 text-sm">
           <a href="index-en.html">
@@ -149,12 +152,12 @@
   <!-- Tentang Kami -->
   <div id="about-us" class="py-16 container mx-auto px-4 md:px-20">
     <h1 class="text-3xl font-semibold text-mekarsari text-center pb-6">Tentang Kami</h1>
-    <div class="flex">
+    <div class="flex flex-col md:flex-row">
     <div class="relative">
-     <img src="dist/img/example.jpg" alt="" class="w-[400px] h-[310px] object-cover">
-     <img src="dist/img/Porudksi.jpg" alt="" class="w-[330px] h-[240px] object-cover absolute top-[20vh] left-[260px] bg-white p-1.5">
+     <img src="dist/img/example.jpg" alt="" class="w-[280px] h-[200px] md:w-[400px] md:h-[310px] object-cover">
+     <img src="dist/img/Porudksi.jpg" alt="" class="w-[250px] h-[180px] md:w-[330px] md:h-[240px] object-cover absolute top-[15vh] md:top-[20vh] left-[200px] md:left-[260px] bg-white p-1.5">
     </div>
-    <div class="w-1/2 ml-80">
+    <div class="mt-28 md:mt-0 md:w-1/2 md:ml-80">
       <h1 class="font-semibold text-3xl">Solusi Terpercaya untuk Kebutuhan Kontraktor dan Pemasok</h1>
       <p class="py-7 text-xs text-secondGray tracking-wide leading-relaxed font-jkt font-medium">Dengan pengalaman lebih dari tiga dekade, kami telah menjadi mitra utama dalam menyediakan solusi kontraktor dan pemasokan untuk industri kelautan dan lepas pantai. Tim kami yang berkompeten dan berpengalaman berkomitmen untuk memberikan layanan yang efisien dan inovatif.away
         <br>
@@ -193,7 +196,7 @@
       </div>
     </div> -->
     
-    <div class="px-3 md:px-20 flex sm:flex-col-reverse md:flex-row mt-28">
+    <div class="px-3 md:px-20 flex sm:flex-col-reverse md:flex-row mt-14 md:mt-28">
       <div class="md:w-1/2">
         <h1 class="text-3xl font-semibold text-mekarsari">Visi & Misi</h1>
         <p class="py-6">Menjadi pemimpin dalam industri jasa, menyediakan solusi berkualitas tinggi untuk kebutuhan kelautan dan lepas pantai.</p>
@@ -244,7 +247,7 @@
       </div>
 
       <!-- Grid untuk Kartu Layanan & Produk -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 z-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 z-0">
 
         <!-- Layanan 1 -->
         <a href="layanan.html#perencanaan">
@@ -254,7 +257,7 @@
           </div>
           <div class="relative z-10">
             <img src="dist/img/plan-list-svgrepo-com 1.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
-            <h3 class="text-xl font-bold text-mekarsari mb-2">Perencanaan</h3>
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Konsultasi</h3>
             <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Studi kelayakan mencakup
               survei, konsultasi, dan pembuatan gambar serta spesifikasi.</p>
           </div>
@@ -277,19 +280,33 @@
         </a>
 
         <!-- Layanan 3 -->
-        <a href="layanan.html#perbaikan-penyewaan">
+        <a href="layanan.html#perbaikan">
           <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group h-[350px] flex flex-col justify-center items-center">
           <div
             class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full">
           </div>
           <div class="relative z-10">
             <img src="dist/img/SVGRepo_iconCarrier.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
-            <h3 class="text-xl font-bold text-mekarsari mb-2">Perbaikan & Penyewaan</h3>
+            <h3 class="text-xl font-bold text-mekarsari mb-2">Perbaikan</h3>
             <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Perbaikan difokuskan pada
               struktur, arsitektur, dan modernisasi berdasarkan permintaan dan anggaran klien.</p>
           </div>
         </div>
       </a>
+      
+      <a href="layanan.html#penyewaan">
+        <div class="relative bg-white rounded-lg shadow-md p-6 text-center overflow-hidden group h-[350px] flex flex-col justify-center items-center">
+        <div
+          class="absolute bottom-0 left-0 right-0 h-0 bg-gradient-to-t from-blue-600 to-white transition-all duration-700 group-hover:h-full">
+        </div>
+        <div class="relative z-10">
+          <img src="dist/img/SVGRepo_iconCarrier.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
+          <h3 class="text-xl font-bold text-mekarsari mb-2">Penyewaan</h3>
+          <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Perbaikan difokuskan pada
+            struktur, arsitektur, dan modernisasi berdasarkan permintaan dan anggaran klien.</p>
+        </div>
+      </div>
+    </a>
   </div>
         
 
@@ -299,14 +316,14 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
       <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-        <a href="produk.html#lampu-suar">
+        <a href="produk.html#MouringBouy">
         <!-- Gambar produk dengan deskripsi alt -->
-        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/Light.png" alt="Lampu Suar" />
+        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/Light.png" alt="Mouring Bouy" />
         <div class="p-5">
             <!-- Judul produk -->
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lampu Suar</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mouring Bouy</h5>
           <!-- Deskripsi singkat produk -->
-          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari menawarkan berbagai macam lampu suar berkualitas yang terjamin.</p>
+          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempora modi corporis?</p>
           <!-- Tombol untuk membaca lebih lanjut -->
           
         </div>
@@ -314,7 +331,21 @@
       </div>
 
       <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-        <a href="produk.html#pelampung-suar">
+        <a href="produk.html#SparBouy">
+        <!-- Gambar produk dengan deskripsi alt -->
+        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/Rantai.png" alt="Rantai" />
+        <div class="p-5">
+            <!-- Judul produk -->
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spar Bouy</h5>
+          <!-- Deskripsi singkat produk -->
+          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit nobis dolorem veniam. Veniam laboriosam vero reiciendis repellendus dolor alias corporis enim beatae. Et, facere!</p>
+          <!-- Tombol untuk membaca lebih lanjut -->
+          
+        </div>
+        </a>
+      </div>
+      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+        <a href="produk.html#lampu-suar">
         <!-- Gambar produk dengan deskripsi alt -->
         <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/buy 1.png" alt="Pelampung Suar" />
         <div class="p-5">
@@ -322,21 +353,6 @@
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pelampung Suar</h5>
           <!-- Deskripsi singkat produk -->
           <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari menawarkan pelampung suar berkualitas tinggi dengan daya tahan terbaik, memastikan keselamatan dan visibilitas optimal di laut.</p>
-          <!-- Tombol untuk membaca lebih lanjut -->
-          
-        </div>
-        </a>
-      </div>
-
-      <div class="hover:scale-110 transition-all duration-300 mt-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-        <a href="produk.html#rantai">
-        <!-- Gambar produk dengan deskripsi alt -->
-        <img class="rounded-t-lg w-full h-[260px] object-cover" src="dist/img/Rantai.png" alt="Rantai" />
-        <div class="p-5">
-            <!-- Judul produk -->
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rantai</h5>
-          <!-- Deskripsi singkat produk -->
-          <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">CV Mekar Sari menawarkan rantai berkualitas tinggi dengan kekuatan dan daya tahan luar biasa, ideal untuk kebutuhan maritim yang membutuhkan keselamatan dan keandalan.</p>
           <!-- Tombol untuk membaca lebih lanjut -->
           
         </div>
@@ -428,20 +444,68 @@
     }
   </script>
   <section id="ContactUs" class="py-12 bg-gray-50 relative">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto">
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-mekarsari mb-4">Hubungi Kami</h2>
       </div>
       <div>
-        <div class="flex gap-8">
-          <img src="dist/img/image 6.png" alt="" class="w-[450px] h-[420px] rounded-lg object-cover">
-            <div class="ml-8">
+        <div class="flex flex-col gap-8">
+            <!-- <img src="dist/img/image 6.png" alt="" class="hidden md:block w-full h-[270px] md:w-[450px] md:h-[420px] rounded-lg object-cover"> -->
+            <div class="relative w-full h-[270px] md:h-[400px]  rounded-lg"> <!-- md:w-[450px] md:h-[420px] -->
+              <!-- Gambar -->
+              <img src="dist/img/image 6.png" alt="" class="w-full h-full object-cover rounded-lg">
+            
+              <!-- Teks yang akan berganti -->
+              <div id="text-container" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white p-4 overflow-hidden">
+                <!-- Teks 1 -->
+                <div id="text-1" class="text-center transition-transform duration-1000 ease-in-out">
+                  <div class="flex flex-col gap-2 items-center">
+                    <img src="dist/icon/location.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
+                    <div class="flex-col text-center">
+                      <h1 class="text-xs font-light">Indonesia</h1>
+                      <h1>Tj. Priok, Jakarta Utara</h1>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Teks 2 -->
+                <div id="text-2" class="hidden text-center transition-transform duration-1000 ease-in-out">
+                  <div class="flex flex-col gap-2 items-center">
+                    <img src="dist/icon/telephone.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
+                    <h1>+62 812-826-974-08</h1>
+                  </div>
+                </div>
+            
+                <!-- Teks 3 -->
+                <div id="text-3" class="hidden text-center transition-transform duration-1000 ease-in-out">
+                  <div class="flex flex-col gap-2 items-center">
+                    <img src="dist/icon/email.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
+                    <div class="flex flex-col gap-1">
+                      <h1>Cv.mekarsarics@gmail.com</h1>
+                      <h1>Mekar_sari_cv@yahoo.com</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Indikator Slide -->
+              <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
+                <div id="indicator-1" class="w-3 h-3 bg-white rounded-full opacity-50"></div>
+                <div id="indicator-2" class="w-3 h-3 bg-white rounded-full opacity-50"></div>
+                <div id="indicator-3" class="w-3 h-3 bg-white rounded-full opacity-50"></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:gap-6 md:flex-row-reverse md:px-24">
+            <div class="container px-4 md:px-0 md:ml-8">
               <h1 class="text-3xl font-semibold">24+ Tahun Konstruksi
                 Perencanaan & Pemasok Lepas Pantai dan Kelautan</h1>
                 <p class="py-4 text-xs text-secondGray tracking-wide leading-relaxed font-jkt font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit qui blanditiis sint, placeat soluta obcaecati voluptates dicta fuga tempora nobis voluptas eveniet ea non, nam sed dignissimos optio quaerat similique recusandae animi nulla voluptatibus? Ipsam delectus vel sapiente officiis error.</p>
             </div>
-          <form id="contact-form" class="bg-white p-5 md:p-6 rounded-lg shadow-lg absolute top-[45%] left-[40%] transform -translate-x-1/2 -translate-y-1/2">
-            <div class="grid grid-cols- gap-6 w-[350px] h-[300px]">    
+            
+          <div class="container px-4 md:px-0">
+          <form id="contact-form" class="bg-white p-5 md:p-6 rounded-lg shadow-lg"> <!-- md:absolute md:top-[45%] md:left-[40%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 -->
+             <div class="grid grid-cols-1 gap-6">    <!-- md:grid-cols-2 gap-6 md:w-[350px] md:h-[300px] -->
               <div>
                 <label for="name" class="block text-gray-700 font-bold mb-2">Nama <span class="text-red-600">*</span></label>
                 <input type="text" id="name" name="name" placeholder="Nama Anda"
@@ -452,19 +516,21 @@
                 <input type="email" id="email" name="email" placeholder="Email Anda"
                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
               </div>
-              <div class="col-span-2">
+              <div class="md:col-span-2">
                 <label for="message" class="block text-gray-700 font-bold mb-2">Pesan</label>
                 <textarea id="message" name="message" rows="4" placeholder="Pesan Anda"
                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari"></textarea>
               </div>
             
                 <button type="submit"
-                  class="col-span-2 bg-mekarsari text-white px-6 py-2 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-mekarsari">
+                  class="md:col-span-2 bg-mekarsari text-white px-6 py-2 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-mekarsari">
                   Kirim Pesan
                 </button>
             </div>
           </form>
-          <div class="bg-mekarsari rounded-lg w-[300px] h-[350px] p-6 absolute top-[45%] right-[17%] transform -translate-y-1/2 text-white">
+          </div>
+          </div>
+          <!-- <div class="hidden md:block bg-mekarsari rounded-lg w-[300px] h-[350px] p-6 absolute top-[45%] right-[17%] transform -translate-y-1/2 text-white">
             <h1 class="text-base text-center py-1 pb-5">Kontak Perusahaan</h1>
             <div class="flex flex-col gap-5 text-sm">
               <div class="flex flex-col gap-2 items-center">
@@ -486,157 +552,47 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> -->
         </div>
       </div>
-      <div class="flex justify-center items-center mt-44">
+      </div>
+      <div class="flex justify-center items-center mt-14 md:mt-20">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53375.7207885233!2d106.8594403206069!3d-6.10723421388797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1f002bd71143%3A0xbbabe92a5f25fb99!2sCV.%20MEKAR%20SARI!5e0!3m2!1sid!2sid!4v1731900504863!5m2!1sid!2sid" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
     </div>
   </section>
 
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-5 md:px-10 py-10">
-    <!-- <div class="self-start">
-      <img src="dist/icon/location-pin-svgrepo-com-removebg-preview 1.svg" alt="Lokasi"
-        class="mb-4 w-12 h-12 md:w-auto md:h-auto">
-      <h4 class="text-mekarsari font-semibold text-lg md:text-xl">Lokasi :</h4>
-      <p class="text-sm md:text-base">Jl. Ganggeng VII No.6, RT.4/RW.7, Sungai Bambu, Kec. Tj. Priok, Jkt Utara, Daerah
-        Khusus Ibukota Jakarta 14330</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-6">
-        <div>
-          <img src="dist/icon/_x35_.svg" alt="Ikon Email" class="mb-4 w-12 h-12 md:w-auto md:h-auto">
-          <h4 class="text-mekarsari font-semibold text-lg md:text-xl">Email :</h4>
-          <p class="text-sm md:text-base">Cv.mekarsarics@gmail.com</p>
-          <p class="text-sm md:text-base">Mekar_sari_cv@yahoo.com</p>
-        </div>
-        <div>
-          <img src="dist/icon/phone-out.svg" alt="Ikon Telepon" class="mb-4 w-12 h-12 md:w-auto md:h-auto">
-          <h4 class="text-mekarsari font-semibold text-lg md:text-xl">Telepon :</h4>
-          <p class="text-sm md:text-base">+6281282697408</p>
-          <p class="text-sm md:text-base">+6281282697408</p>
-        </div>
-      </div>
-    </div> -->
-    <!-- Form Kontak -->
-    <!-- <form id="contact-form" class="bg-white p-5 md:p-6 rounded-lg shadow-lg">
-      <h2 class="text-xl md:text-2xl font-semibold text-mekarsari mb-4 md:mb-6">Hubungi Kami</h2>
-    
-      <div class="mb-4">
-        <label for="name" class="block text-gray-700 font-bold mb-2">Nama <span class="text-red-600">*</span></label>
-        <input type="text" id="name" name="name" placeholder="Nama Anda"
-          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
-      </div>
-    
-      <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-bold mb-2">Email <span class="text-red-600">*</span></label>
-        <input type="email" id="email" name="email" placeholder="Email Anda"
-          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
-      </div>
-    
-      <div class="mb-4">
-        <label for="message" class="block text-gray-700 font-bold mb-2">Pesan</label>
-        <textarea id="message" name="message" rows="4" placeholder="Pesan Anda"
-          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari"></textarea>
-      </div>
-    
-      <div class="flex justify-end">
-        <button type="submit"
-          class="bg-mekarsari text-white px-6 py-2 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-mekarsari">
-          Kirim Pesan
-        </button>
-      </div>
-    </form> -->
-    
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-      // Inisialisasi EmailJS
-      (function() {
-        console.log("Inisialisasi EmailJS...");
-        emailjs.init("NnQC8xK2kcimrAKQO"); // Ganti dengan Public Key (User ID) Anda
-        console.log("EmailJS diinisialisasi dengan Public Key.");
-      })();
-    
-      // Ambil form dan tambahkan event listener
-      document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        console.log("Form submit event terdeteksi.");
-    
-        // Ambil data input dari form
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-    
-        console.log("Data form:", { name, email, message });
-    
-        const templateParams = {
-          from_name: name,
-          from_email: email,
-          message: message,
-        };
-    
-        // Log templateParams
-        console.log("Mengirim email dengan templateParams:", templateParams);
-    
-        // Kirim email menggunakan EmailJS
-        emailjs.send("service_7z6rwsn", "template_106u4kh", templateParams)
-          .then((response) => {
-            alert("Pesan berhasil dikirim!");
-            console.log("SUCCESS! Status:", response.status, "Text:", response.text);
-            document.getElementById("contact-form").reset();
-          })
-          .catch((error) => {
-            alert("Gagal mengirim pesan. Coba lagi.");
-            console.error("FAILED... Error:", error);
-          });
-      });
-    </script>
-    
-  </div>
-
-  <!-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="border-t text-center border-mekarsari pt-8 mt-8"></div>
-          <p class="mb-6 text-gray-500">Copyright © 2024 CV Mekarsari | Powered by H Dev</p>
-        </div>
-      </div>
-    </div>
-  </footer> -->
-
-  <footer class="bg-mekarsari w-full px-6 py-24 flex justify-between items-start text-white">
+  <footer class="bg-mekarsari w-full px-6 py-24 flex flex-col gap-7 md:gap-0 justify-center items-center md:flex-row md:justify-between md:items-start text-white">
     <h1 class="uppercase text-4xl font-semibold">CV. Mekarsari</h1>
     <div class="flex flex-col gap-3 text-sm">
-      <h1 class="text-base py-1">Kontak Perusahaan</h1>
-      <div class="flex gap-2 items-center">
+      <h1 class="text-2xl font-medium md:font-normal md:text-base py-1 text-center md:text-start">Kontak Perusahaan</h1>
+      <div class="flex flex-col md:flex-row gap-2 items-center">
         <img src="dist/icon/location.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
-        <div class="flex-col">
+        <div class="flex-col text-center md:text-start">
           <h1 class="text-xs font-light">Indonesia</h1>
           <h1>Tj. Priok, Jakarta Utara</h1>
         </div>
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex flex-col md:flex-row gap-2 items-center">
         <img src="dist/icon/telephone.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
           <h1>+62 812-826-974-08</h1>
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex flex-col md:flex-row gap-2 items-center">
         <img src="dist/icon/email.svg" alt="" class="w-7 h-7 p-1 bg-white rounded-full">
-        <div class="flex-col">
+        <div class="flex-col text-center md:text-start">
           <h1>Cv.mekarsarics@gmail.com</h1>
           <h1>Mekar_sari_cv@yahoo.com</h1>
         </div>
       </div>
     </div>
-    <div class="flex flex-col gap-3 text-sm">
-      <h1 class="py-1 text-base">Menu</h1>
+    <div class="flex flex-col text-center md:text-start gap-3 text-sm">
+      <h1 class="py-1 text-center md:text-start text-2xl md:text-base font-medium md:font-normal">Menu</h1>
       <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Beranda</a>
       <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Tentang Kami</a>
-      <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Produk & Layanan</a>
+      <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Produk</a>
+      <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Layanan</a>
       <a href="" class="hover:border-b-2 hover:border-white hover:w-[35px]">Hubungi Kami</a>
     </div>
-    <div class="flex flex-col ga-3">
+    <div class="flex flex-col ga-3 hidden md:block">
       <h1 class="py-1">Sosial Media</h1>
       <div class="flex gap-3">
         <img src="dist/icon/telephone.svg" alt="" class="w-5 h-5 p-1 bg-white rounded-full">
@@ -647,6 +603,59 @@
     </div>
   </footer>
   
+  <script>
+    let currentTextIndex = 0;
+const texts = [
+  document.getElementById('text-1'),
+  document.getElementById('text-2'),
+  document.getElementById('text-3')
+];
+
+const indicators = [
+  document.getElementById('indicator-1'),
+  document.getElementById('indicator-2'),
+  document.getElementById('indicator-3')
+];
+
+const icons = [
+  document.querySelector('#text-1 img'),
+  document.querySelector('#text-2 img'),
+  document.querySelector('#text-3 img')
+];
+
+// Fungsi untuk menunjukkan teks berikutnya
+function showNextText() {
+  // Sembunyikan teks yang sedang ditampilkan
+  texts[currentTextIndex].classList.add('hidden');
+  // Reset indikator dan ikon
+  indicators[currentTextIndex].classList.remove('opacity-100');
+  indicators[currentTextIndex].classList.add('opacity-50');
+  icons[currentTextIndex].classList.remove('bg-white'); // Kembalikan ikon ke warna semula
+
+  // Update index untuk teks berikutnya, dan loop kembali ke awal
+  currentTextIndex = (currentTextIndex + 1) % texts.length;
+
+  // Tampilkan teks berikutnya
+  texts[currentTextIndex].classList.remove('hidden');
+  // Update indikator
+  indicators[currentTextIndex].classList.add('opacity-100');
+  indicators[currentTextIndex].classList.remove('opacity-50');
+  // Ganti warna ikon menjadi putih
+  icons[currentTextIndex].classList.add('bg-white');
+}
+
+// Ubah teks setiap 5 detik
+setInterval(showNextText, 3500);
+
+// Inisialisasi tampilan teks pertama
+showNextText();
+
+  </script>
+  <style>
+    .bg-white {
+  background-color: white !important;
+}
+  </style>
   <script>
 
     document.addEventListener('DOMContentLoaded', function () {
