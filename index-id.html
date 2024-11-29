@@ -26,6 +26,7 @@
       /* Atur opacity menjadi 1 */
     }
   </style>
+  
 </head>
 
 <body class="font-sans mx-auto max-w-[1920px] scroll-smooth">
@@ -174,6 +175,7 @@
   </div>
 
 <!-- Kerjasama -->
+<h1 class="text-3xl font-semibold text-mekarsari text-center pb-6">Kerja Sama</h1>
 <div class="scrolling-container">
   <div class="scrolling-content">
     <!-- Konten asli -->
@@ -197,7 +199,6 @@
     <img src="dist/icon/ptdru.svg" alt="" class="w-[200px] h-[200px]">
   </div>
 </div>
-
 <!-- End Kerjasama -->
 <style>
   .scrolling-container {
@@ -350,8 +351,7 @@
           <div class="relative z-10">
             <img src="dist/img/SVGRepo_iconCarrier.png" alt="Layanan 1" class="w-[100px] mx-auto mb-4">
             <h3 class="text-xl font-bold text-mekarsari mb-2">Perbaikan & Penyewaan</h3>
-            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Perbaikan difokuskan pada
-              struktur, arsitektur, dan modernisasi berdasarkan permintaan dan anggaran klien.</p>
+            <p class="text-sm text-secondGray group-hover:text-white transition-colors duration-700">Layanan Perbaikan dan Penyewaan Mooring Buoy Perusahaan kami menyediakan layanan perbaikan dan penyewaan khusus untuk mooring buoy dan peralatan kelautan terkait.</p>
           </div>
         </div>
       </a>
@@ -430,12 +430,13 @@
         <button
           class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
           onclick="toggleAnswer('answer1', this)">
-          <span>Apa itu Mooring Buoy?</span>
+          <span>Apa saja layanan utama yang CV.MEKAR SARI tawarkan?</span>
           <span class="arrow text-xl" id="arrow1">&#9662;</span> <!-- Panah ke bawah -->
         </button>
         <div id="answer1" class="answer">
           <div class="bg-gray-100 px-4 py-2">
-            <p>Mooring buoy adalah pelampung yang digunakan untuk mengamankan kapal di air tanpa menggunakan jangkar.
+            <p>Kami menawarkan berbagai layanan di bidang kelautan, termasuk pembuatan, perbaikan, dan penyewaan mooring buoy. Kami juga menyediakan solusi untuk alat navigasi kelautan, serta layanan terkait lainnya yang mendukung kegiatan operasional di laut.
+
             </p>
           </div>
         </div>
@@ -445,15 +446,13 @@
         <button
           class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
           onclick="toggleAnswer('answer2', this)">
-          <span>Apa manfaat menggunakan Mooring Buoy?</span>
+          <span>Apakah CV.MEKAR SARI menyediakan produk kelautan khusus sesuai permintaan?</span>
           <span class="arrow text-xl" id="arrow2">&#9662;</span> <!-- Panah ke bawah -->
         </button>
         <div id="answer2" class="answer">
           <div class="bg-gray-100 px-4 py-2">
-            <p>Manfaatnya termasuk kenyamanan dan efisiensi, karena kapal dapat segera berlabuh tanpa menggunakan
-              jangkar. Ini juga ramah lingkungan, mencegah kerusakan pada dasar laut, seperti terumbu karang. Mooring
-              buoy menyediakan tempat berlabuh yang lebih stabil, mengurangi risiko kapal bergerak karena angin atau
-              arus laut.</p>
+            <p>Ya, kami dapat memproduksi produk kelautan sesuai dengan kebutuhan spesifik Anda. Mulai dari ukuran, material, hingga fitur tambahan seperti lampu navigasi, sistem penambatan, hingga peralatan survei hidrografi. Kami bekerja sama dengan klien untuk memastikan setiap produk disesuaikan dengan kondisi dan spesifikasi proyek mereka.
+            </p>
           </div>
         </div>
       </div>
@@ -462,13 +461,13 @@
         <button
           class="w-full bg-gray-200 text-left flex justify-between items-center px-4 py-2 font-semibold focus:outline-none"
           onclick="toggleAnswer('answer3', this)">
-          <span>Apa itu Beacon Light?</span>
+          <span>Mengapa memilih CV Mekarsari?</span>
           <span class="arrow text-xl" id="arrow3">&#9662;</span> <!-- Panah ke bawah -->
         </button>
         <div id="answer3" class="answer">
           <div class="bg-gray-100 px-4 py-2">
-            <p>Beacon light adalah alat bantu navigasi yang dipasang di laut atau sepanjang pantai untuk membantu
-              memandu kapal, biasanya menandai lokasi berbahaya atau sinyal lalu lintas maritim.</p>
+            <p><strong> CV. MEKAR SARI </strong> Berpengalaman lebih dari tiga dekade sejak 1986, ahli dalam sektor lepas pantai dan kelautan, berkomitmen pada kualitas layanan tinggi, serta didukung oleh tim profesional yang berdedikasi.</p>
+
           </div>
         </div>
       </div>
@@ -570,30 +569,60 @@
 
             </div>
           <div class="container px-4 md:px-0">
-          <form id="contact-form" class="bg-white p-5 md:p-6 rounded-lg shadow-lg"> <!-- md:absolute md:top-[45%] md:left-[40%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 -->
-             <div class="grid grid-cols-1 gap-6">    <!-- md:grid-cols-2 gap-6 md:w-[350px] md:h-[300px] -->
-              <div>
-                <label for="name" class="block text-gray-700 font-bold mb-2">Nama <span class="text-red-600">*</span></label>
-                <input type="text" id="name" name="name" placeholder="Nama Anda"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
-              </div>
-              <div>
-                <label for="email" class="block text-gray-700 font-bold mb-2">Email <span class="text-red-600">*</span></label>
-                <input type="email" id="email" name="email" placeholder="Email Anda"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
-              </div>
-              <div class="md:col-span-2">
-                <label for="message" class="block text-gray-700 font-bold mb-2">Pesan</label>
-                <textarea id="message" name="message" rows="4" placeholder="Pesan Anda"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari"></textarea>
-              </div>
-            
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="bg-white p-5 md:p-6 rounded-lg shadow-lg" onsubmit="handleSubmit(event)">
+              <input type="hidden" name="access_key" value="f4f1ec21-eb44-4e05-812f-a43bda803ff0"> 
+              <div class="grid grid-cols-1 gap-6">
+                <div>
+                  <label for="name" class="block text-gray-700 font-bold mb-2">Nama <span class="text-red-600">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Nama Anda"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
+                </div>
+                <div>
+                  <label for="email" class="block text-gray-700 font-bold mb-2">Email <span class="text-red-600">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="Email Anda"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari" required>
+                </div>
+                <div class="md:col-span-2">
+                  <label for="message" class="block text-gray-700 font-bold mb-2">Pesan</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Pesan Anda"
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-mekarsari"></textarea>
+                </div>
+              
                 <button type="submit"
                   class="md:col-span-2 bg-mekarsari text-white px-6 py-2 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring focus:ring-mekarsari">
                   Kirim Pesan
                 </button>
-            </div>
-          </form>
+              </div>
+            </form>
+            
+            <script>
+              function handleSubmit(event) {
+                event.preventDefault();  // Mencegah pengiriman form secara default
+            
+                // Mendapatkan form
+                var form = document.getElementById("contact-form");
+            
+                // Mengirimkan form melalui fetch atau AJAX
+                fetch(form.action, {
+                  method: form.method,
+                  body: new FormData(form),
+                })
+                .then(response => {
+                  if (response.ok) {
+                    alert("Pesan berhasil dikirim!");
+                    // Kosongkan form setelah berhasil
+                    form.reset();
+                  } else {
+                    alert("Gagal mengirim pesan, coba lagi.");
+                  }
+                })
+                .catch(error => {
+                  console.error('Terjadi kesalahan:', error);
+                  alert("Gagal mengirim pesan, coba lagi.");
+                });
+              }
+            </script>
+            
           </div>
           </div>
           <!-- <div class="hidden md:block bg-mekarsari rounded-lg w-[300px] h-[350px] p-6 absolute top-[45%] right-[17%] transform -translate-y-1/2 text-white">
@@ -662,7 +691,7 @@
           <h1 class="text-xs font-light">Indonesia</h1>
           <p>
             Jl. Ganggeng VII No.18 3, RT.3/RW.7, Sungai Bambu, 
-            Kec. Tanjung Priok, Jakarta Utara, Daerah Khusus Ibukota Jakarta 14330
+            <br>Kec. Tanjung Priok, Jakarta Utara, Daerah Khusus Ibukota Jakarta 14330
           </p>
         </div>
       </div>
@@ -677,8 +706,6 @@
       <a href="#hubungi-kami" class="hover:border-b-2 hover:border-white">Hubungi Kami</a>
     </div>
   </footer>
-  
-  
   <script>
     let currentTextIndex = 0;
 const texts = [
