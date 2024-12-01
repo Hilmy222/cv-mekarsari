@@ -840,6 +840,10 @@ video {
   height: 270px;
 }
 
+.h-\[30px\]{
+  height: 30px;
+}
+
 .h-\[350px\]{
   height: 350px;
 }
@@ -850,6 +854,14 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-\[370px\]{
+  height: 370px;
 }
 
 .w-1\/2{
