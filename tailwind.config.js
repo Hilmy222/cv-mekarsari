@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+      "loop-scroll" : "loop-scroll 10s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
         mekarsari: '#05308c',  // Warna khusus Mekar Sari
         paleBlue: "#304057",
