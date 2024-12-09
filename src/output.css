@@ -986,12 +986,12 @@ video {
   }
 
   to{
-    transform: translateX(-100%);
+    transform: translateX(-102%);
   }
 }
 
 .animate-loop-scroll{
-  animation: loop-scroll 10s linear infinite;
+  animation: loop-scroll 30s linear infinite;
 }
 
 .cursor-default{
